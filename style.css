@@ -1,0 +1,156 @@
+::-webkit-scrollbar {
+    width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #f4f4f4; 
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333; 
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #333 #f4f4f4; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding-top: 70px; /* padding spasi untuk antar header ke body */
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; 
+    padding: 10px 20px;
+    align-items: center;
+}
+
+/* posisi header kiri */
+.navbar h1 {
+    font-size: 24px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.navbar h1 i {
+    margin-right: 10px;
+}
+
+/* posisi baten di kanan */
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.navbar ul li button:hover {
+    background-color: #ff6347; /* hover baten */
+    transform: scale(1.05); /* agak gedein sikit button kalo di hover */
+}
+
+/* media utk hengpon desktop */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        width: 100%;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .navbar ul li button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Layout styling */
+header, section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+/* Paragraph styling */
+p {
+    text-align: justify; /* Rata kanan-kiri */
+    text-indent: 1em; /* Indentasi satu kali */
+    margin-bottom: 1em; /* Spasi antar paragraf */
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
